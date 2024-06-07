@@ -1,0 +1,11 @@
+let guestList = ["Hamza", "Ali", "Khalid", "Sidra"];
+let dontCome = guestList[0];
+console.log(dontCome, "Nhi a skta hy");
+guestList.splice(0, 1, "Amir");
+console.log("Good News ! we have found a bigger table for dinner.");
+guestList.unshift("Ali");
+guestList.push("Zain");
+let middleIndex: number = Math.floor(guestList.length / 2);
+guestList.splice(middleIndex, 0, "Usman");
+console.log("UpdatedList of our Guests");
+guestList.forEach(oneguest => console.log(`Salam ${oneguest}, Would you like to dinner with us?`));
